@@ -8,3 +8,9 @@ We use [kaggle-fake-news](https://www.kaggle.com/datasets/clmentbisaillon/fake-a
 please download [kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset/download?datasetVersionNumber=1) or [Liar](https://www.cs.ucsb.edu/~william/data/liar_dataset.zip) and unzip them into dataset path.  
 We also upload the data on [dirve](https://drive.google.com/drive/folders/1T58dHhgk6IDoOZAH4lMSgvb42V1eRlbA?usp=sharing)  
 
+Detail in [main notebook](https://github.com/H3CO3/fake-news-attack/blob/main/notebook.ipynb)  
+If you run in colab:  
+```
+! pip install tensorflow_text
+! pip install textattack
+```
