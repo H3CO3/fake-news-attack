@@ -36,7 +36,7 @@ class cnn_lstm:
         else:
             raise Exception("need embedding method")
         
-        layer3 = tf.keras.layers.Dropout(dropout)
+        layer3 = tf.keras.layers.Dropout(dropout)(input)
         layer4 = tf.keras.layers.Conv1D(filters=cov_filters,
                                         kernel_size=cov_kernel,
                                         padding='valid',
