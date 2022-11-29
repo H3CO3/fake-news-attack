@@ -24,7 +24,7 @@ hub_layer = hub.KerasLayer("https://tfhub.dev/google/nnlm-en-dim128-with-normali
 
 # CNN-LSTM Model structure in https://ieeexplore.ieee.org/abstract/document/9178321
 class cnn_lstm:   
-    def __init__(self, cov_filters=32, cov_kernel=4, pool_size=2, LSTM_units=20, 
+    def __init__(self, cov_filters=32, cov_kernel=4, pool_size=2, LSTM_units=20,
                  dropout=0.2, embedding='bert'):
         input = tf.keras.layers.Input(shape=(), dtype=tf.string)
         if embedding == "nnlm":
@@ -36,11 +36,11 @@ class cnn_lstm:
         else:
             raise Exception("need embedding method")
         
+        layer3 = tf.keras.layers.Dropout(dropout)
         layer4 = tf.keras.layers.Conv1D(filters=cov_filters,
                                         kernel_size=cov_kernel,
                                         padding='valid',
-                                        activation='relu',
-                                        dropout=dropout)(layer1)
+                                        activation='relu')(layer3)
         layer5 = tf.keras.layers.MaxPool1D(pool_size=pool_size)(layer4)
         layer6 = tf.keras.layers.LSTM(units=LSTM_units)(layer5)
         output = tf.keras.layers.Dense(1,activation='sigmoid')(layer6)
