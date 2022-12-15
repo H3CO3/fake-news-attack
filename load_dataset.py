@@ -27,6 +27,25 @@ class kaggle_dataset:
             df_news['fake'].to_numpy(),
             test_size=0.2,
             random_state=42)
+
+class kaggle_dataset_title:
+    def __init__(self, path="./dataset/Fake-News/"):
+        self.path = path
+        
+        df_fake_news = pd.read_csv(self.path+'Fake.csv')
+        df_true_news = pd.read_csv(self.path+'True.csv')
+        df_fake_news['fake'] = 1
+        df_true_news['fake'] = 0
+        # Concatenate fake and true news
+        df_news = pd.concat([df_fake_news, df_true_news])
+        # Dataframe shuffling and feature and label extraction
+        df_news = df_news.sample(frac=1) # frac=1 means to return all rows (in random order)
+
+        self.train_sentences, self.val_sentences, self.train_labels, self.val_labels=train_test_split(
+            df_news['title'].to_numpy(),
+            df_news['fake'].to_numpy(),
+            test_size=0.2,
+            random_state=42)
         
 class liar_dataset:
     def __init__(self, path="./dataset/Liar/"):
