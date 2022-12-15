@@ -19,5 +19,5 @@ If you run in colab:
 ### Attack
 Detail in [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/RawNegProcess.ipynb) and [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/Project.ipynb)
 
-### Group Number
+### Group Members
 MQY, ZSY, LYW
