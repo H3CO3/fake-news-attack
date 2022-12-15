@@ -8,7 +8,7 @@ We use [kaggle-fake-news](https://www.kaggle.com/datasets/clmentbisaillon/fake-a
 please download [kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset/download?datasetVersionNumber=1) or [Liar](https://www.cs.ucsb.edu/~william/data/liar_dataset.zip) and unzip them into dataset path.  
 We also upload the data on [dirve](https://drive.google.com/drive/folders/1T58dHhgk6IDoOZAH4lMSgvb42V1eRlbA?usp=sharing)  
 
-### Model(including word embedding)
+### Word Embedding, Network, TextAttack
 Detail in [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/notebook.ipynb)  
 If you run in colab:  
 ```
@@ -17,6 +17,7 @@ If you run in colab:
 ```
 
 ### Attack
+Try [fake-news-explainability](https://github.com/ljyflores/fake-news-adversarial-benchmark) attack
 Detail in [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/RawNegProcess.ipynb) and [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/Project.ipynb)
 
 ### Group Members
