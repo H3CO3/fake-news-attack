@@ -17,7 +17,7 @@ If you run in colab:
 ```
 
 ### Attack
-Try [fake-news-explainability](https://github.com/ljyflores/fake-news-adversarial-benchmark) attack
+Try [fake-news-explainability](https://github.com/ljyflores/fake-news-adversarial-benchmark) attack  
 Detail in [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/RawNegProcess.ipynb) and [notebook](https://github.com/H3CO3/fake-news-attack/blob/main/Project.ipynb)
 
 ### Group Members
